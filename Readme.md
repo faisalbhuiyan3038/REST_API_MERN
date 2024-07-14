@@ -1,0 +1,1 @@
+A REST API Project built with Node, Express, Typescript, MongoDB with Authentication
