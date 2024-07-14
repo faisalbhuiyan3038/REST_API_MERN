@@ -102,3 +102,19 @@ Run `npm start` to start it.
   This will get rid of type errors.
 
   Note: Body-parser is built into Express now, so no need to install separately.
+
+- Setup MongoDB Atlas
+
+  - Create an organization.
+  - Create a New Project.
+  - Create a database. Add User and IP Address.
+  - Connect with MongoDB Driver for NodeJS.
+  - Add the connection string to constant MONGO_URL.
+
+  Import mongoose and initialize mongoose:
+
+  ```ts
+  mongoose.Promise = Promise;
+  mongoose.connect(MONGO_URL);
+  mongoose.connection.on("error", (error: Error) => console.log(error));
+  ```
